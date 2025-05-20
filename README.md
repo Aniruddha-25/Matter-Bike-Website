@@ -22,7 +22,7 @@ This project is an interactive web-based presentation for the MATTER AERA motorb
   
   Clean layout, bold visuals, and intuitive navigation.
 
-#  🚀 How To Use?
+#  How To Use?
 1) Clone the repository and open Program.html in your browser.
 
 1) Use Live Server (recommended) for the best experience.
