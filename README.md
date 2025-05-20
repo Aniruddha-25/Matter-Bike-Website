@@ -1,3 +1,8 @@
+
+
+https://github.com/user-attachments/assets/c4d190c4-ed1d-4364-883f-c1de33128109
+
+
 # 🏍️ Matter Bike Website
 
 
@@ -29,4 +34,3 @@ This project is an interactive web-based presentation for the MATTER AERA motorb
 
 1) Scroll or use the arrow keys to rotate the bike.
 
-Watch as key features are revealed during the animation.
