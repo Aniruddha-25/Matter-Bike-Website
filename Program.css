@@ -1,0 +1,374 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.logo-design {
+  width: 150px;
+  height: 30px;
+  background-color: #fff;
+}
+
+.container-nav-container {
+  box-shadow: 0 4px 8px 0 rgba(19, 6, 6, 0.2);
+  color: white;
+  padding-right: 45px;
+  padding-left: 45px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.navdiv .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navdiv ul {
+  flex: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  background-color: lightgrey;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-item a:hover {
+  background-color: lightgrey;
+  border-radius: 4px;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1000;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.drop-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.drop-menu li {
+  padding: 5px 20px;
+}
+
+.drop-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.drop-menu li a:hover {
+  background-color: #555;
+}
+
+.navbar ul li:hover .drop-menu {
+  display: flex;
+  opacity: 1;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.scroll-container {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
+.body_container {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+}
+.scroll-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.scroll-container img.scrolled {
+  opacity: 1;
+  transform: translateY(-50px);
+}
+
+.old-transition-fade-in {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.scroll-animation {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.scroll-animation img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-animation .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.bike {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bike-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: var();
+  opacity: 0;
+  transition: opacity 0s ease-in-out;
+  z-index: 0;
+}
+
+.bike-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+.text_area_1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 20px;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  width: 250px;
+  padding-left: 150px;
+}
+
+.text_area_1 h1 {
+  font-size: 36px;
+  color: black;
+
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.text_area_1 h2 {
+  font-size: 36px;
+  color: rgb(3, 106, 249);
+
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.text_area_2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  width: 250px;
+  padding-left: 150px;
+}
+.text_area_2 h1 {
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.text_area_2 h2 {
+  font-size: 36px;
+  color: rgb(3, 106, 249);
+  line-height: 5px;
+
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.text_area_2 ul {
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  line-height: 35px;
+  font-size: 20px;
+
+  color: rgb(100, 100, 100);
+}
+.text_area_2 h4 {
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.text_area_3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  width: 250px;
+  padding-left: 150px;
+}
+.text_area_3 h1 {
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.text_area_3 h2 {
+  font-size: 36px;
+  color: rgb(3, 106, 249);
+  line-height: 40px;
+
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.text_area_4 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  padding: 20px;
+
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  width: 380px;
+  padding-left: 150px;
+}
+.text_area_4 h1 {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.text_area_5 {
+  position: absolute;
+  left: 25%;
+  top: 6%;
+  transform: translateY(-50%);
+
+   font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+
+  padding-left: 150px;
+  display: flex;
+  
+
+}
+.text_area_5 h1 {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
